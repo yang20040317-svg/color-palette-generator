@@ -1,0 +1,180 @@
+/* 引入Google Fonts字体 */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700;800;900&family=Noto+Sans+SC:wght@700;900&family=Poppins:wght@700;800;900&family=Space+Grotesk:wght@400;700&display=swap');
+
+:root {
+  /* 基础字体 - 粗体现代风格 */
+  font-family: 'Inter', 'Noto Sans SC', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 700; /* 使用粗体字重 */
+
+  /* 字体变量 - 粗体现代风格 */
+  --font-display: 'Inter', 'Noto Sans SC', sans-serif; /* 主标题字体 */
+  --font-bold: 'Inter', 'Noto Sans SC', sans-serif; /* 粗体字体 */
+  --font-sans: 'Inter', 'Noto Sans SC', sans-serif; /* 无衬线字体 */
+  --font-elegant: 'Inter', 'Noto Sans SC', sans-serif; /* 优雅字体 */
+  --font-geo: 'Space Grotesk', sans-serif; /* 简约几何化无衬线字体 */
+
+  color-scheme: light dark;
+  color: #213547;
+  background-color: #ffffff;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#root {
+  width: 100%;
+  height: 100vh;
+}
+
+h1 {
+  font-size: 2.2em;
+  line-height: 1.1;
+  font-family: var(--font-display);
+  font-weight: 900; /* 粗体标题 */
+  letter-spacing: -1px; /* 负间距增强现代感 */
+}
+
+h2 {
+  font-size: 1.5em;
+  line-height: 1.1;
+  font-family: var(--font-display);
+  font-weight: 900;
+  letter-spacing: -1px;
+}
+
+/* 粗体现代风格字体特定样式 */
+.font-display {
+  font-family: var(--font-display);
+  font-weight: 900; /* 粗体字重 */
+  letter-spacing: -1px; /* 负间距增强现代感 */
+  line-height: 1;
+}
+
+.font-bold {
+  font-family: var(--font-bold);
+  font-weight: 800; /* 粗体字重 */
+  letter-spacing: -0.5px; /* 轻微负间距 */
+  line-height: 1.2;
+}
+
+.font-sans {
+  font-family: var(--font-sans);
+  font-weight: 700; /* 粗体字重 */
+  letter-spacing: -0.3px;
+  line-height: 1.3;
+}
+
+.font-elegant {
+  font-family: var(--font-elegant);
+  font-weight: 700; /* 粗体字重 */
+  letter-spacing: -0.5px;
+  line-height: 1.2;
+}
+
+/* 优化文本渲染效果 */
+.text-optimized {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+/* 标题和强调文本（粗体现代感） */
+.text-accent {
+  font-family: var(--font-display);
+  font-weight: 900;
+  letter-spacing: -1px;
+  line-height: 1;
+}
+
+/* 优雅风格文本（粗体） */
+.text-elegant {
+  font-family: var(--font-elegant);
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  line-height: 1.2;
+}
+
+/* 强调文本（粗体） */
+.text-bold {
+  font-family: var(--font-bold);
+  font-weight: 800;
+  letter-spacing: -0.5px;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #f9f9f9;
+  cursor: pointer;
+  transition: all 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+  background-color: #f0f0f0;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+input {
+  font-family: inherit;
+  font-size: 1em;
+  padding: 0.5em 0.8em;
+  border: 1px solid #d0d0d0;
+  border-radius: 6px;
+  transition: all 0.25s;
+}
+
+input:focus {
+  outline: none;
+  border-color: #646cff;
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color: rgba(255, 255, 255, 0.87);
+    background-color: #242424;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #1a1a1a;
+  }
+  button:hover {
+    background-color: #2a2a2a;
+  }
+  input {
+    background-color: #1a1a1a;
+    color: rgba(255, 255, 255, 0.87);
+    border-color: #3a3a3a;
+  }
+}
